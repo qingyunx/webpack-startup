@@ -1,14 +1,16 @@
-## // create a directory, initialize npm, and install webpack locally
+# webpack-startup
+
+## create a directory, initialize npm
 ```
 mkdir webpack-startup && cd webpack-startup
 
 npm init -y
 ```
-## // install babel and webpack
+## install babel and webpack locally
 ```
 npm install --save-dev babel-loader babel-core babel-preset-env webpack
 ```
-## // .babelrc
+## .babelrc
 
 ```
 {
@@ -16,7 +18,7 @@ npm install --save-dev babel-loader babel-core babel-preset-env webpack
 }
 ```
 
-## // webpack.config.js
+## webpack.config.js
 
 ```
 'use strict';
@@ -40,4 +42,8 @@ module.exports =  {
     ]
   },
 };
+```
+## create bundle
+```
+npm run build
 ```
